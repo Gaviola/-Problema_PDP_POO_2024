@@ -68,6 +68,10 @@ public class Funcion {
     }
     //endregion
 
+    public boolean comparar(Funcion funcion) {
+        return this.pelicula == funcion.pelicula && this.horario == funcion.horario;
+    }
+
     @Override
     public String toString() {
         return "Horario: " + horario + ", \nPelícula: " + pelicula + ", \nIdioma: "
